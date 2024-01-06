@@ -7,7 +7,6 @@ import TechCloudSection from "@/components/tech-cloud-section/tech-cloud-section
 export default function Home() {
 	return (
 		<main className="">
-			<h1 className="text-center">MainPage</h1>
 			<HeroSection />
 			<ProjectsSection />
 			<TechCloudSection />

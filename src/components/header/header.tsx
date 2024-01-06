@@ -1,10 +1,12 @@
+import Logo from "../logo/logo";
+
 export default function Header() {
-    return (
-      <header className="bg-green-100">
-        <nav className="flex justify-between">
-          <div>Agency Logo</div>
-          <div>Menu</div>
-        </nav>
-      </header>
-    );
+		return (
+	<header className="p-6 ">
+		<nav className="flex justify-between items-center md:px-8">
+		<Logo />
+		<div>Menu</div>
+		</nav>
+	</header>
+	);
 }
