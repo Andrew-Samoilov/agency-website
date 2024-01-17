@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 dark:bg-slate-100 text-slate-100 dark:text-slate-900 p-6 md:px-12 lg:px-24 lg:pr-32">
+    <footer className="bg-slate-900 dark:bg-slate-100 text-slate-300 dark:text-slate-800 p-6 md:p-12 lg:p-24 lg:pr-32">
       <div className="flex justify-between items-top pb-6">
         <Logo styleLogo="leading-3 text-sky-300 dark:text-main-sky hover:text-slate-100  dark:hover:text-slate-900" />
         <div>menu</div>
@@ -28,11 +28,11 @@ export default function Footer() {
         </div>
       </div>
       <hr />
-      <div className="pt-6 flex justify-between items-center text-slate-100 dark:text-slate-900 text-sm flex-col-reverse md:flex-row">
+      <div className="pt-6 flex justify-between items-center text-sm flex-col-reverse md:flex-row">
         <div className="flex justify-around pt-6 md:p-0">
           <Link
             href={"#"}
-            className="hover:text-sky-300  dark:hover:text-main-sky "
+            className="hover:text-sky-300 dark:hover:text-main-sky "
           >
             Cookies
           </Link>
