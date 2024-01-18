@@ -1,6 +1,6 @@
 export const projectsData=[
     {
-        id: 1,
+        id: "1",
         name: "Tours de Kiev",
         title: "Touristic agency website",
         description: "Website of a working travel agency specializing in tours in Kyiv and Ukraine.",
@@ -8,7 +8,7 @@ export const projectsData=[
         urlTitle: "toursdekiev.com.ua",
     },
     {
-        id: 2,
+        id: "2",
         name: "Jugue tear",
         title: "Juguetear website",
         description: "We adapt and provide toys for boys and girls with complex motor disabilities.",
@@ -16,7 +16,7 @@ export const projectsData=[
         urlTitle: "juguetear.vercel.app",
     },
     {
-        id: 3,
+        id: "3",
         name: "Disla Shop",
         title: "Wheels online shop",
         description: "Online shop of the first Ukraine lite alloy wheels manufacturer.",
