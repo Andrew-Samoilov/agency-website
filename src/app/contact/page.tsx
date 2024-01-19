@@ -1,6 +1,6 @@
 export default function ContactPage() {
     return (
-      <section className="bg-emerald-100">
+      <main className="bg-emerald-100">
         <h1 className="text-center py-4">Contact us</h1>
         <h3>Don&apos;t be shy, say hi!</h3>
         <p>Have a question, a project? We&apos;d love to discuss...</p>
@@ -13,6 +13,6 @@ export default function ContactPage() {
           incidunt cumque officia deserunt. Perspiciatis officia soluta
           dignissimos sapiente voluptates, magnam hic.
         </p>
-      </section>
+      </main>
     );
 }

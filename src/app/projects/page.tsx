@@ -1,7 +1,8 @@
 import ProjectsLoad from "@/components/projects-load/projectsLoad";
 
 export default function ProjectsPage() {
-    return (
+  return (
+    <main>
       <section className="p-6 md:p-12 lg:p-24">
         <h1 className="text-center text-3xl md:text-6xl lg:text-8xl pt-[0.75em] pb-[0.25em] font-bold tracking-wide text-main-sky dark:text-sky-300">
           Our projects
@@ -16,5 +17,6 @@ export default function ProjectsPage() {
           </article>
         </div>
       </section>
-    );
+    </main>
+  );
 }
