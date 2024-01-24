@@ -4,6 +4,7 @@ interface Project {
     id: string;
     name: string;
     title: string;
+    imgUrl: string;
     description: string;
     url: string;
     urlTitle: string;

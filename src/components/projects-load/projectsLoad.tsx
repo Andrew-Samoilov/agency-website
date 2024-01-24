@@ -8,7 +8,10 @@ export default function ProjectsLoad({
   return (
     <>
       {projectsData.map((project) => (
-        <article className="relative md:p-[1em]" key={project.id}>
+        <article
+          className="relative md:p-[1em] dark:text-slate-300"
+          key={project.id}
+        >
           <Link
             href={isMain ? "/projects" : `/projects/${project.id}`}
             className="group z-0"
@@ -25,7 +28,7 @@ export default function ProjectsLoad({
               ></Image>
             )}
             <p className=" pt-[0.75em] pb-[0.25em]">{project.title}</p>
-            <div className="absolute md:p-[1em] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 bg-main-sky/90 text-white">
+            <div className="absolute md:p-[1em] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 bg-main-sky/90 text-white dark:text-slate-200">
               <p className="text-center text-2xl md:text-5xl lg:text-6xl pb-[0.25em]">
                 {project.name}
               </p>

@@ -11,10 +11,9 @@ export const projectsData = [
     {
         id: "2",
         name: "Jugue tear",
-        title: "Website about adapted toys for girls and boys with complex motor disabilities",
+        title: "Website about sharing adapted toys.",
         imgUrl: "/projects/j-screenshot.jpg",
-        description: `We adapt and provide toys for boys and girls with complex motor disabilities. 
-        Toys can be connected to switches(such as buttons) so that people with difficulty controlling them with their fingers can play with them by activating their various functions with one or more switches.`,
+        description: `Website about adapting and providing toys for boys and girls with complex motor disabilities.`,
         url: "https://juguetear-web.vercel.app/",
         urlTitle: "juguetear.vercel.app",
     },

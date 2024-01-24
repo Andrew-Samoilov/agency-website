@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 dark:bg-slate-100 text-slate-300 dark:text-slate-800 p-6 md:p-12 lg:p-24 lg:pr-32">
+    <footer className="bg-slate-900 dark:bg-slate-200 text-slate-300 dark:text-slate-800 p-6 md:p-12 lg:p-24 lg:pr-32">
       <div className="flex justify-between items-top pb-6">
         <Logo styleLogo="leading-3 text-sky-300 dark:text-main-sky hover:text-slate-100  dark:hover:text-slate-900" />
         <div>menu</div>
