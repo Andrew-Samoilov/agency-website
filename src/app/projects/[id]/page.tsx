@@ -38,9 +38,17 @@ export default function ProjectDetail({
             <p className="pb-[0.25em] text-2xl md:text-5xl lg:text-6xl lg:max-w-5xl">
               {project?.title}
             </p>
-            <Link href={`${project?.url}`} className="md:text-2xl">
-              {project?.urlTitle}
-            </Link>
+ 
+              <Link
+                href={`${project?.url}`}
+                className="md:text-2xl pb-[0.25em]"
+              >
+                {project?.urlTitle}
+              </Link>
+              <p className="italic md:text-2xl pb-[0.25em]">
+                Our role: <span className="text-main-sky">{project?.role}</span>
+              </p>
+         
             <p className="pb-[0.75em] md:text-2xl lg:text-3xl leading-normal md:leading-relaxed lg:max-w-4xl col-span-2">
               {project?.description}
             </p>
