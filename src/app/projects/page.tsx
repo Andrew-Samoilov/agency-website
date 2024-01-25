@@ -1,4 +1,10 @@
 import ProjectsLoad from "@/components/projects-load/projectsLoad";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our projects",
+  description: "Some of our most successful projects. Your brilliant project must be here",
+};
 
 export default function ProjectsPage() {
   return (

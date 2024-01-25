@@ -4,8 +4,12 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 
 export const metadata: Metadata = {
-  title: "Agency website",
-  description: "A website for a digital agency.",
+  metadataBase: new URL("https://tech-vibe-agency.vercel.app/"),
+  title: {
+    template: "%s | Tech Vibe agency",
+    default: "Tech Vibe agency",
+  },
+  description: "A website for a Tech Vibe digital agency",
 };
 
 export default function RootLayout({

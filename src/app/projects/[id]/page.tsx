@@ -2,6 +2,7 @@ import { getAllPostIds, getPostData } from "@/app/lib/project";
 import ContactSection from "@/components/contact-section/contact-section";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
   params: { id: string };
@@ -11,6 +12,23 @@ type Props = {
 export function generateStaticParams() {
   const res = getAllPostIds();
   return res;
+}
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const project = getPostData(params.id);
+
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: "Our project: " + project?.title,
+    description: project?.description,
+    openGraph: {
+      images: [project?.imgUrl ? project?.imgUrl : "", ...previousImages],
+    },
+  };
 }
 
 export default function ProjectDetail({
@@ -38,17 +56,14 @@ export default function ProjectDetail({
             <p className="pb-[0.25em] text-2xl md:text-5xl lg:text-6xl lg:max-w-5xl">
               {project?.title}
             </p>
- 
-              <Link
-                href={`${project?.url}`}
-                className="md:text-2xl pb-[0.25em]"
-              >
-                {project?.urlTitle}
-              </Link>
-              <p className="italic md:text-2xl pb-[0.25em]">
-                Our role: <span className="text-main-sky">{project?.role}</span>
-              </p>
-         
+
+            <Link href={`${project?.url}`} className="md:text-2xl pb-[0.25em]">
+              {project?.urlTitle}
+            </Link>
+            <p className="italic md:text-2xl pb-[0.25em]">
+              Our role: <span className="text-main-sky">{project?.role}</span>
+            </p>
+
             <p className="pb-[0.75em] md:text-2xl lg:text-3xl leading-normal md:leading-relaxed lg:max-w-4xl col-span-2">
               {project?.description}
             </p>
