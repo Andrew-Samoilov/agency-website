@@ -32,7 +32,7 @@ export default function ProjectsLoad({
               Our role: <span className="text-main-sky">{project.role}</span>
             </p>
             <p className="pt-[0.75em] pb-[0.25em]">{project.title}</p>
-            <div className="absolute md:p-[1em] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 bg-main-sky/90 text-white dark:text-slate-200">
+            <div className="absolute md:p-[1em] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 duration-300 bg-main-sky/90 text-white dark:text-slate-200">
               <p className="text-center text-2xl md:text-5xl lg:text-6xl pb-[0.25em]">
                 {project.name}
               </p>
