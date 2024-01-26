@@ -3,7 +3,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our projects",
-  description: "Some of our most successful projects. Your brilliant project must be here",
+  description:
+    "Some of our most successful projects. Your brilliant project must be here",
+  openGraph: {
+    description:
+      "Some of our most successful projects. Your brilliant project must be here",
+  },
 };
 
 export default function ProjectsPage() {

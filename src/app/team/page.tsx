@@ -1,4 +1,13 @@
 import TeamLoad from "@/components/team-load/teamLoad";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our team",
+  description: "Our beautiful team. Maybe you must be here.",
+  openGraph: {
+    description: "Our beautiful team. Maybe you must be here.",
+  },
+};
 
 export default function TeamPage() {
     return (

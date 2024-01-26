@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "./projects-data";
-import { stringToURL } from "@/app/lib/project";
+import { stringToURL } from "@/lib/project";
 
 export default function ProjectsLoad({
   isMain,
@@ -14,7 +14,9 @@ export default function ProjectsLoad({
           key={project.id}
         >
           <Link
-            href={isMain ? "/projects" : `/projects/${stringToURL(project.name)}`}
+            href={
+              isMain ? "/projects" : `/projects/${stringToURL(project.name)}`
+            }
             className="group z-0"
           >
             <h3 className="text-center text-2xl md:text-5xl lg:text-6xl pb-[0.25em] h-[2em]">

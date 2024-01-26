@@ -1,32 +1,36 @@
-import { getAllPostIds, getPostData } from "@/app/lib/project";
+import { getAllDataIds, getProjectData } from "@/lib/project";
 import ContactSection from "@/components/contact-section/contact-section";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 
+import { IProject } from "@/types/types";
+import { projectsData } from "@/components/projects-load/projects-data";
+
 type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+    params: { id: string };
+    searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export function generateStaticParams() {
-  const res = getAllPostIds();
-  return res;
+    const res = getAllDataIds<IProject>(projectsData);
+    return res;
 }
 
 export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const project = getPostData(params.id);
+  const project = getProjectData(params.id);
 
-  const previousImages = (await parent).openGraph?.images || [];
+  const previousImages = (await parent).openGraph?.images ?? [];
 
   return {
     title: "Our project: " + project?.title,
     description: project?.description,
     openGraph: {
       images: [project?.imgUrl ? project?.imgUrl : "", ...previousImages],
+      description: project?.description,
     },
   };
 }
@@ -35,7 +39,7 @@ export default function ProjectDetail({
   params,
   searchParams,
 }: Readonly<Props>) {
-  let project = getPostData(params.id);
+  let project = getProjectData(params.id);
   return (
     <main>
       <section className="dark:text-slate-200">
@@ -50,6 +54,7 @@ export default function ProjectDetail({
                 alt={project.title}
                 width={600}
                 height={400}
+                priority
                 className="row-span-3 lg:pb-[2em]"
               ></Image>
             )}
