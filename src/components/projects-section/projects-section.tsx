@@ -1,10 +1,11 @@
 import ProjectsLoad from "@/components/projects-load/projectsLoad";
+import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
     <section className="p-6 md:p-12 lg:p-24">
       <h2 className="text-center text-3xl md:text-6xl lg:text-8xl pt-[0.75em] pb-[0.25em] font-bold tracking-wide text-main-sky dark:text-sky-300">
-        Our projects
+        <Link href={'/projects'}>Our projects</Link>
       </h2>
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
         <ProjectsLoad isMain={true} />

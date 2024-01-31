@@ -9,7 +9,8 @@ export default function TeamLoad({ isMain }: Readonly<{ isMain: boolean }>) {
       {teamData.map((member) => (
         <article key={member.id} className="md:p-[1em] dark:text-slate-300">
           <Link
-            href={isMain ? "/team" : `/team/${stringToURL(member.name)}`}
+            // href={isMain ? "/team" : `/team/${stringToURL(member.name)}`}
+            href={`/team/${stringToURL(member.name)}`}
             className="group"
           >
             {member.imgUrl && (
