@@ -7,7 +7,12 @@ export default function HeroSection() {
         Hello &mdash;
       </h1>
       <div className="relative text-3xl md:text-5xl font-bold bg-main-sky dark:bg-sky-300 text-white dark:text-black md:pr-[2em] z-0">
-        <Image src={"/bg-drop.svg"} alt="bg" fill={true} className="-z-10" />
+        <Image
+          src={"/images/bg-drop.svg"}
+          alt="bg"
+          fill={true}
+          className="-z-10"
+        />
         <p className="p-[0.75em] pt-[1.5em] leading-relaxed md:max-w-6xl md:pl-[1em] lg:pl-[3em]">
           Welcome to our world. We&apos;re Tech Vibe,{" "}
           <span className="text-main-sky font-outline-white hover:text-white hover:font-outline-none">

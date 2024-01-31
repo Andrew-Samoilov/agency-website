@@ -24,7 +24,12 @@ export default function ContactSection({
       ${sectionStyle}`}
     >
       {sectionLook && (
-        <Image src={"/bg-drop.svg"} alt="bg" fill={true} className="-z-10" />
+        <Image
+          src={"/images/bg-drop.svg"}
+          alt="bg"
+          fill={true}
+          className="-z-10"
+        />
       )}
       <h2
         className={`leading-relaxed font-bold dark:text-slate-200 text-3xl md:text-5xl md:leading-relaxed md:max-w-3xl lg:max-w-xl lg:mr-48 pb-6 md:pb-0 ${h2Style}`}
