@@ -12,7 +12,8 @@ const config: Config = {
         'main-sky': '#0369a1', //sky-700
       },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
+
 export default config
