@@ -1,5 +1,6 @@
 import ContactUsBtn from "../contact-us-btn/contact-us-btn";
 import Logo from "../logo/logo";
+import MainMenu from "../main-menu/mainMenu";
 
 export default function Header() {
   return (
@@ -7,8 +8,12 @@ export default function Header() {
       <nav className="flex justify-between items-center">
         <Logo />
         <div className="flex items-center">
-          <div className="px-8">Menu</div>
-          <ContactUsBtn />
+          <MainMenu
+            styleNav="hidden md:flex"
+            styleMenuItem="pr-8 dark:hover:text-sky-300 hover:text-main-sky"
+      
+          />
+          <ContactUsBtn buttonText="Get a Quote" />
         </div>
       </nav>
     </header>

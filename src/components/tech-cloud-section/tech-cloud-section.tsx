@@ -6,7 +6,7 @@ import { InfiniteLooper } from "../infinite-looper/infinite-looper";
 export default function TechCloudSection() {
   return (
     <section className="py-6 md:py-12 lg:py-24 text-gray-200 z-0 bg-main-sky ">
-      <InfiniteLooper direction="left" speed={10}>
+      <InfiniteLooper direction="left" speed={15}>
         {techLogos.map((logo) => (
           <Image
             src={logo.src}
