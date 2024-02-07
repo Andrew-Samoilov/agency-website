@@ -10,9 +10,9 @@ type Props = {
 };
 
 export function generateStaticParams() {
-    const res = getAllDataIds<ITeam>(teamData);
-    // console.log(`generateStaticParams `, res);
-    return res;
+  const res = getAllDataIds<ITeam>(teamData);
+  // console.log(`generateStaticParams `, res);
+  return res;
 }
 
 export async function generateMetadata(

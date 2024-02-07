@@ -8,13 +8,13 @@ import { IProject } from "@/types/types";
 import { projectsData } from "@/components/projects-load/projects-data";
 
 type Props = {
-    params: { id: string };
-    searchParams: { [key: string]: string | string[] | undefined };
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export function generateStaticParams() {
-    const res = getAllDataIds<IProject>(projectsData);
-    return res;
+  const res = getAllDataIds<IProject>(projectsData);
+  return res;
 }
 
 export async function generateMetadata(
