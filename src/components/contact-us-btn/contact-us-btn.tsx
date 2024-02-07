@@ -11,8 +11,8 @@ export default function ContactUsBtn({
       buttonStyle =
         "bg-white hover:bg-main-sky dark:bg-black text-main-sky hover:text-white dark:text-sky-300 border-main-sky hover:border-white duration-300";
       break;
-    case "red":
-      buttonStyle = "bg-red";
+    case "top":
+      buttonStyle = buttonStyle +" hidden lg:block";
       break;
     default:
       break;

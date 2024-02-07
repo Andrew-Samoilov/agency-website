@@ -7,13 +7,13 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-900 dark:bg-slate-200 text-slate-300 dark:text-slate-800 p-6 md:p-12 lg:p-24 lg:pr-32">
-      <div className="flex justify-between items-top pb-6">
-        <Logo styleLogo="leading-3 text-sky-300 dark:text-main-sky hover:text-slate-100  dark:hover:text-slate-900" />
+      <div className="md:flex md:justify-between items-top pb-6">
+        <Logo styleLogo="hidden md:flex leading-3 text-sky-300 dark:text-main-sky hover:text-slate-100  dark:hover:text-slate-900" />
         <MainMenu
-          styleMenuItem="lg:pr-8 hover:text-sky-300 dark:hover:text-main-sky"
+          styleMenuItem="lg:pr-8 hover:text-sky-300 dark:hover:text-main-sky hidden md:block"
           styleNav="flex flex-col lg:flex-row"
         />
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex md:flex-col lg:flex-row">
           <div className="font-bold mr-3">Follow us:</div>
           <Link
             href={"https://www.facebook.com/andrii.samoylov"}

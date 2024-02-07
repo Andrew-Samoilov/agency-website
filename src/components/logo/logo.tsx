@@ -3,11 +3,14 @@ import Image from "next/image";
 
 interface LogoProps {
   styleLogo?: string;
+  onClickFunction?: any;
 }
 
-export default function Logo({ styleLogo = " leading-3 text-main-sky dark:text-sky-300 hover:text-black dark:hover:text-main-sky" }: Readonly<LogoProps>) {
+export default function Logo({ styleLogo = " leading-3 ", onClickFunction }: Readonly<LogoProps>) {
   return (
-    <Link href={"/"} className={`flex items-center ${styleLogo}`}>
+    <Link href={"/"}
+      onClick={onClickFunction}
+      className={`flex items-center text-main-sky dark:text-sky-300 hover:text-black dark:hover:text-main-sky ${styleLogo}`}>
       <Image
         src={"/images/logos/logo-t.svg"}
         alt="T"
