@@ -1,18 +1,17 @@
+import SendForm from "@/components/form/form";
+
 export default function ContactPage() {
   return (
-    <main className="bg-emerald-100">
-      <h1 className="text-center py-4">Contact us</h1>
-      <h3>Don&apos;t be shy, say hi!</h3>
-      <p>Have a question, a project? We&apos;d love to discuss...</p>
-      <hr />
+    <main className="">
+      <section className="p-6 md:p-12 lg:p-24 lg:flex">
+        <div className="lg:w-1/2">
+          <h1 className="text-left text-3xl md:text-6xl lg:text-8xl pb-[0.25em] font-bold tracking-wide text-main-sky dark:text-sky-300">Contact us</h1>
+          <p className="text-xl pb-[1em]">Get in touch with us to see how we can help you with your project</p>
+        </div>
 
-      <h2 className="text-xl text-center">Form</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
-        aliquam provident tenetur? Similique eos delectus assumenda sequi ipsa
-        incidunt cumque officia deserunt. Perspiciatis officia soluta
-        dignissimos sapiente voluptates, magnam hic.
-      </p>
+        <SendForm />
+
+      </section>
     </main>
   );
 }
