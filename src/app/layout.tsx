@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     default: "Tech Vibe agency",
   },
   description: "A website for a Tech Vibe digital agency",
+  openGraph: {
+    images: '/images/logos/logo-t.svg',
+    description: "A website for a Tech Vibe digital agency",
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>

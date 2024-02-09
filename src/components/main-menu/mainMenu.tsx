@@ -1,3 +1,6 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 
 interface MainMenuProps {
@@ -27,17 +30,20 @@ export default function MainMenu({ styleNav, styleMenuItem, onClickFunction}:
     },
   ];
 
+  const pathname = usePathname();
+
   return (
+
     <nav className={styleNav}>
       {menuItems.map(({ id, text, link }) => (
         <Link
           key={id}
           href={link}
           onClick={onClickFunction}
-          className={styleMenuItem}
+          className={`${styleMenuItem} ${pathname === link ? 'font-bold' : ''} `}
           aria-hidden
         >
-          {text}
+            {text}
         </Link>
       ))}
     </nav>
