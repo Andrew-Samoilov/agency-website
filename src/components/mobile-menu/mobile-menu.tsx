@@ -38,7 +38,7 @@ export default function MobileMenu() {
 
             {
                 isMobileMenuOpen ? (
-                    <div className="z-20 fixed top-0 left-0 w-screen h-screen p-6 flex flex-col justify-between items-center bg-white dark:bg-black">
+                    <div className="z-20 fixed top-0 left-0 w-screen h-dvh p-6 flex flex-col justify-between items-center bg-white dark:bg-black">
                         <Logo
                             styleLogo='mr-auto'
                             onClickFunction={handleClick}
