@@ -9,7 +9,7 @@ export default function ContactSection({
 
   switch (sectionLook) {
     case "main":
-      sectionStyle = "bg-main-sky dark:bg-sky-300 text-white dark:text-black";
+      sectionStyle = "bg-main-sky text-white dark:text-black";
       break;
     case "red":
       sectionStyle = "bg-red";
@@ -37,8 +37,8 @@ export default function ContactSection({
         Have project in mind? Let&apos;s discuss
       </h2>
       <ContactUsBtn
-        className="text-sky-700 hover:text-white bg-white hover:bg-sky-700 
-                dark:bg-sky-700 dark:text-white dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
+        className="text-sky-700 hover:text-white bg-white hover:bg-transparent 
+                dark:bg-sky-300 dark:text-white  dark:hover:text-sky-300 hover:border-white "
       />
     </section>
   );

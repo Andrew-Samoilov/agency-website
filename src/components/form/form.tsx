@@ -13,8 +13,8 @@ export type FormData = {
 export default function SendForm({ className }: Readonly<{ className?: string }>) {
 
     function onSubmit(data: FormData) {
-        console.log(`form`, data);
-        sendEmail(data);
+        // console.log(`form`, data);
+        sendEmail(data); 
     }
 
     const {
@@ -28,25 +28,25 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
             <label className="flex flex-col pb-[0.5em]">Name*{' '}
                 <input placeholder="Enter you name"
                     {...register("name", { required: true })}
-                    className="border-2 p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
+                    className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
             </label>
 
             <label className="flex flex-col pb-[0.5em]" >Email{' '}
                 <input placeholder="example@domain.com"
                     {...register("email")}
-                    className="border-2 p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
+                    className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
             </label>
 
             <label className="flex flex-col pb-[0.5em]" >Subject{' '}
                 <input placeholder="Subject"
                     {...register("subj")}
-                    className="border-2 p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
+                    className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
             </label>
 
             <label className="flex flex-col col-span-2 pb-[0.5em]">Message{' '}
                 <textarea placeholder="Type your message"
                     {...register("message", { required: true })}
-                    className="border-2 p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
+                    className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
             </label>
 
             <label className="flex flex-row pb-[0.5em]" >
