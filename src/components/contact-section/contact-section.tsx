@@ -36,7 +36,10 @@ export default function ContactSection({
       >
         Have project in mind? Let&apos;s discuss
       </h2>
-      <ContactUsBtn buttonLook={sectionLook} />
+      <ContactUsBtn
+        className="text-sky-700 hover:text-white bg-white hover:bg-sky-700 
+                dark:bg-sky-700 dark:text-white dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
+      />
     </section>
   );
 }
