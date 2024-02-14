@@ -5,13 +5,13 @@ import TeamSection from "@/components/team-section/team-section";
 import TechCloudSection from "@/components/tech-cloud-section/tech-cloud-section";
 
 export default function Home() {
-	return (
+  return (
     <main className="">
       <HeroSection />
       <ProjectsSection />
       <TechCloudSection />
       <TeamSection />
       <ContactSection sectionLook="main" />
-    </main>
+      </main>
   );
 }

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     template: "%s | Tech Vibe agency",
     default: "Tech Vibe agency",
   },
+  icons: {
+    icon: '/images/logos/logo-t.svg',
+  },
   description: "A website for a Tech Vibe digital agency",
   openGraph: {
     images: '/images/logos/logo-t.svg',

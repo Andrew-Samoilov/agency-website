@@ -1,5 +1,6 @@
 import TeamLoad from "@/components/team-load/teamLoad";
 import Link from "next/link";
+import ContactUsBtn from "../contact-us-btn/contact-us-btn";
 
 export default function TeamSection() {
   return (
@@ -10,12 +11,15 @@ export default function TeamSection() {
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
         <TeamLoad isMain={true} />
 
-        <div className="md:p-[1em] ">
-          <p className="text-2xl md:text-5xl lg:text-6xl">Join the team</p>
-          <button className="mt-[0.75em] mb-[0.25em] border text-main-sky dark:text-sky-300 border-main-sky dark:border-sky-300 font-semibold px-[1em] py-[0.5em]">
-            Apply now
-          </button>
+        <div className="md:p-[1em] flex flex-col items-center justify-center">
+          <p className="text-center text-2xl md:text-5xl lg:text-6xl pb-[1em] ">Join the team</p>
+          <ContactUsBtn
+            className=" text-sky-700 hover:text-white bg-white hover:bg-sky-700 
+                dark:bg-sky-700 dark:text-white dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
+            buttonText="Apply now"
+          /> 
         </div>
+        
       </div>
     </section>
   );

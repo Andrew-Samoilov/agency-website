@@ -9,7 +9,7 @@ export default function ContactPage() {
           <p className="text-xl pb-[1em]">Get in touch with us to see how we can help you with your project</p>
         </div>
 
-        <SendForm className=""/>
+        <SendForm/>
 
       </section>
     </main>

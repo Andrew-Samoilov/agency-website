@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+//maybe need change from "buttonText" to "children"
+
 export default function ContactUsBtn({
   buttonText = "Contact\u00A0Us",
   className,
@@ -10,7 +12,9 @@ export default function ContactUsBtn({
       href="/contact"
       className={`border border-main-sky duration-300 font-semibold px-[1em] py-[0.5em] ${className}`}
     >
-      {buttonText}
+      <button>
+        {buttonText}
+      </button>
     </Link>
   );
 }
