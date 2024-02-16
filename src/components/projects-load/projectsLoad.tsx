@@ -29,7 +29,7 @@ export default function ProjectsLoad({
                 height={200}
               ></Image>
             )}
-            <p className="text-right italic">
+            <p className=" italic">
               Our role: <span className="text-main-sky">{project.role}</span>
             </p>
             <p className="pt-[0.75em] pb-[0.25em]">{project.title}</p>

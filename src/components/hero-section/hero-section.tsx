@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HeroSection() {
     return (
         <section className="">
-            <h1 className="text-7xl md:text-9xl lg:text-[192px] pt-[0.75em] font-bold tracking-wide text-main-sky  pl-4 md:pl-[0.75em] mb-[-0.16em]">
+            <h1 className="text-7xl md:text-9xl lg:text-[192px] pt-[0.75em] font-bold tracking-wide text-main-sky  pl-4 md:pl-[0.75em] mb-[-0.165em]">
                 Hello &mdash;
             </h1>
             <div className="relative text-3xl md:text-5xl font-bold bg-main-sky  text-white dark:text-black md:pr-[2em] z-0 ">
@@ -31,7 +31,11 @@ export default function HeroSection() {
                 </p>
                 <p className="p-[0.75em] leading-relaxed md:max-w-6xl md:pl-[1em] lg:pl-[3em]">
                     Whether you&apos;ve got a quick concept or want to run through the
-                    details of your next big project, we can help. Let&apos;s chat now.
+                    details of your next big project, we can help.{" "}
+                    <Link href="/contact"
+                        className="md:text-transparent md:font-outline-white md:dark:font-outline-black md:hover:text-white md:dark:hover:text-sky-300 md:hover:font-outline-none">
+                    Let&apos;s chat now.
+                    </Link>
                 </p>
             </div>
         </section>
