@@ -17,7 +17,6 @@ export default function Home() {
           className="text-3xl md:text-5xl  max-w-3xl md:pr-[2em]"
         />
       </section>
-      <hr />
       <ProjectsSection />
       <Stages />
       <TechCloudSection />
