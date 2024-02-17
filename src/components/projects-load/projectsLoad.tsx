@@ -3,45 +3,36 @@ import Link from "next/link";
 import { projectsData } from "./projects-data";
 import { stringToURL } from "@/lib/project";
 
-export default function ProjectsLoad({
-  isMain,
-}: Readonly<{ isMain: boolean }>) {
+export default function ProjectsLoad() {
   return (
     <>
       {projectsData.map((project) => (
-        <article
-          className="relative md:p-[1em] dark:text-slate-300"
-          key={project.id}
-        >
+        <article key={project.id}
+          className="relative  dark:text-slate-300">
           <Link
-            // href={isMain ? "/projects" : `/projects/${stringToURL(project.name)}`}
             href={`/projects/${stringToURL(project.name)}`}
-            className="group z-0"
-          >
-            <h3 className="text-center text-2xl md:text-5xl lg:text-6xl pb-[0.25em] h-[2em]">
-              {project.name}
-            </h3>
+            className="group z-0">
+
             {project.imgUrl && (
-              <Image
-                src={project.imgUrl}
-                alt={project.title}
-                width={300}
-                height={200}
-              ></Image>
+              <div className="  w-400 h-400 overflow-hidden group">
+                <Image
+                  src={project.imgUrl}
+                  alt={project.title}
+                  width={400}
+                  height={300}
+                  className=" group-hover:scale-105 duration-300 block w-full h-full object-cover"
+                ></Image>
+                <div className="absolute bottom-0 right-0 w-auto bg-white/75 text-right p-[1em] group-hover:text-white group-hover:bg-main-sky/95 duration-300">
+                  <h3 className="font-bold text-xl pb-[0.25em] ">
+                    {project.name}
+                  </h3>
+                  <p className=" italic">Our role: {project.role}</p>
+                  <p className="pt-[0.75em] pb-[0.25em]">{project.title}</p>
+                </div>
+              </div>
             )}
-            <p className=" italic">
-              Our role: <span className="text-main-sky">{project.role}</span>
-            </p>
-            <p className="pt-[0.75em] pb-[0.25em]">{project.title}</p>
-            <div className="absolute md:p-[1em] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100 duration-300 bg-main-sky/90 text-white dark:text-slate-200">
-              <p className="text-center text-2xl md:text-5xl lg:text-6xl pb-[0.25em]">
-                {project.name}
-              </p>
-              <p className="p-[2em] leading-normal">{project.description}</p>
-              <p className="p-[2em]">More...</p>
-            </div>
+
           </Link>
-          <hr className="md:hidden" />
         </article>
       ))}
     </>

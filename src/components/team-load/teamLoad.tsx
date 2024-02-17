@@ -22,7 +22,7 @@ export default function TeamLoad({ isMain }: Readonly<{ isMain: boolean }>) {
                   height={400}
                   className=" group-hover:scale-105 duration-300"
                 />
-                <div className="absolute bottom-0 right-0 w-auto text-right p-[1em] text-white group-hover:bg-main-sky/95 duration-300">
+                <div className="absolute bottom-0 right-0 w-auto text-right p-[1em] bg-white/75 group-hover:text-white group-hover:bg-main-sky/95 duration-300">
                   <h2 className="font-bold text-xl pb-[0.25em]">
                     {member.name}
                   </h2>

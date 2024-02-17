@@ -7,7 +7,7 @@ export default function HeroSection() {
             <h1 className="text-7xl md:text-9xl lg:text-[192px] pt-[0.75em] font-bold tracking-wide text-main-sky  pl-4 md:pl-[0.75em] mb-[-0.165em] md:mb-[-0.1em]">
                 Hello &mdash;
             </h1>
-            <div className="relative text-3xl md:text-5xl font-bold bg-main-sky  text-white dark:text-black md:pr-[2em] z-0 ">
+            <div className="relative text-3xl md:text-5xl font-bold bg-main-sky  text-white dark:text-sky-300 md:pr-[2em] z-0 ">
                 <Image
                     src={"/images/bg-drop.svg"}
                     alt="animated backgound"
