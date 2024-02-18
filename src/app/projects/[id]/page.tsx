@@ -44,7 +44,7 @@ export default function ProjectDetail({
     <main>
       <section className="dark:text-slate-200">
         <article className=" md:p-12 lg:p-24 lg:grid grid-cols-2 grid-flow-row-dense">
-          <h1 className="p-6 md:p-0 text-main-sky dark:text-sky-300 font-bold text-3xl md:text-6xl lg:text-8xl md:max-w-3xl lg:mr-48 pb-[0.25em] ">
+          <h1 className="p-6 md:p-0  font-semibold text-3xl md:text-6xl lg:text-8xl md:max-w-3xl lg:mr-48 pb-[0.25em] ">
             {project?.name}
           </h1>
           {project?.imgUrl && (

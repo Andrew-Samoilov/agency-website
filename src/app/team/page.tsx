@@ -15,7 +15,7 @@ export default function TeamPage() {
   return (
     <main>
       <section className="p-6 md:p-12 lg:p-24 ">
-        <h1 className="text-center text-3xl md:text-6xl lg:text-8xl pb-[0.25em] font-bold tracking-wide text-main-sky dark:text-sky-300">
+        <h1 className="text-center text-3xl md:text-6xl lg:text-8xl pb-[0.25em] font-bold tracking-wide ">
           Our team
         </h1>
         <p className="pb-[0.25em] text-xl md:text-2xl">
