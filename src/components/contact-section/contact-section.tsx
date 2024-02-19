@@ -15,6 +15,7 @@ export default function ContactSection({
       sectionStyle = "bg-red";
       break;
     default:
+      sectionStyle = "bg-main-sky text-white dark:text-black";
       break;
   }
 
@@ -24,14 +25,13 @@ export default function ContactSection({
       ${sectionStyle}`}
     >
       {sectionLook && (
-        <Image
-          src={"/images/bg-drop.svg"}
-          alt="bg"
+        <Image src={"/images/bg-drop.svg"}
+          alt="bg" 
           fill={true}
           className="-z-10"
         />
       )}
-      <h2
+      <h2 
         className={`leading-relaxed font-bold dark:text-slate-200 text-3xl md:text-5xl md:leading-relaxed md:max-w-3xl lg:max-w-xl lg:mr-48 pb-6 md:pb-0 ${h2Style}`}
       >
         Have project in mind? Let&apos;s discuss
@@ -39,6 +39,7 @@ export default function ContactSection({
       <ContactUsBtn
         className="text-sky-700 hover:text-white bg-white hover:bg-transparent 
                 dark:bg-sky-300 dark:text-white  dark:hover:text-sky-300 hover:border-white "
+        subjectText={`contact-section-${sectionLook}`}
       />
     </section>
   );

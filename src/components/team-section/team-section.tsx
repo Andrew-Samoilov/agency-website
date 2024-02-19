@@ -17,6 +17,7 @@ export default function TeamSection() {
             className=" text-sky-700 hover:text-white bg-white hover:bg-sky-700 
                 dark:bg-sky-700 dark:text-white dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
             buttonText="Apply now"
+            subjectText="team-section"
           /> 
         </div>
         

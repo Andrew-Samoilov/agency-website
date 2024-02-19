@@ -35,7 +35,9 @@ export default function TeamPage() {
         />
         <ContactUsBtn
           buttonText="Join&nbsp;us"
-          className="mt-6 md:m-0 md:ml-12 " />
+          className="mt-6 md:m-0 md:ml-12 "
+          subjectText="team-page"
+        />
       </section>
     </main>
   );

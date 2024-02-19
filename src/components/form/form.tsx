@@ -1,6 +1,7 @@
 'use client'
 import { useForm } from "react-hook-form"
 import { sendEmail } from './send-email';
+import { useSearchParams } from "next/navigation";
 
 export type FormData = {
     name: string
@@ -14,13 +15,15 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
 
     function onSubmit(data: FormData) {
         // console.log(`form`, data);
-        sendEmail(data); 
+        sendEmail(data);
     }
 
     const {
         register,
         handleSubmit,
     } = useForm<FormData>()
+
+    let formSubj = useSearchParams().get('subject-text');
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={`text-xl ${className}`}>
@@ -40,6 +43,7 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
             <label className="flex flex-col pb-[0.5em]" >Subject{' '}
                 <input placeholder="Subject"
                     {...register("subj")}
+                    defaultValue={formSubj ? formSubj : ''}
                     className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
             </label>
 

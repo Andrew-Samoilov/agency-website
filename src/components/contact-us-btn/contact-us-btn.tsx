@@ -4,12 +4,18 @@ import Link from "next/link";
 
 export default function ContactUsBtn({
   buttonText = "Contact\u00A0Us",
+  subjectText,
   className,
-}: Readonly<{ buttonText?: string, className?: string }>) {
+}: Readonly<{ buttonText?: string, subjectText?: string, className?: string }>) {
+  let hrefRes = '/contact';
+
+  if (subjectText) {
+    hrefRes = hrefRes + '?subject-text=' + subjectText;
+  }
 
   return (
     <Link
-      href="/contact"
+      href={hrefRes}
       className={`border border-main-sky duration-300 font-semibold px-[1em] py-[0.5em] ${className}`}
     >
       <button>

@@ -15,6 +15,11 @@ export default function ContactPage() {
             width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[50vh] lg:h-[100vh]"></iframe>
         {/* </div> */}
       </section>
+      <section className="flex justify-around p-6 md:p-12 lg:p-24">
+        <p>phone</p>
+        <p>tg</p>
+        <p>e@mail</p>
+      </section>
     </main>
   );
 }

@@ -74,7 +74,7 @@ export default function ProjectDetail({
         </article>
       </section>
 
-      <ContactSection />
+      <ContactSection sectionLook={`project-${project?.urlTitle}`} />
     </main>
   );
 }
