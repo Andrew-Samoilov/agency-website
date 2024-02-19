@@ -26,7 +26,7 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
     let formSubj = useSearchParams().get('subject-text');
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className={`text-xl ${className}`}>
+        <form onSubmit={handleSubmit(onSubmit)} className={` ${className}`}>
 
             <label className="flex flex-col pb-[0.5em]">Name*{' '}
                 <input placeholder="Enter you name"
