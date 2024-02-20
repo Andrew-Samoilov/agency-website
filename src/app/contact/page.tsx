@@ -13,8 +13,8 @@ export default function ContactPage() {
           <SendForm />
         </div>
         {/* <div className="w-full h-[50vh] lg:h-[100vh]"> */}
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17082.56126707991!2d30.35079035883301!3d50.47205243685994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1708288771518!5m2!1suk!2sua"
-            width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[50vh] lg:h-[100vh]"></iframe>
+          <iframe title="googleMaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17082.56126707991!2d30.35079035883301!3d50.47205243685994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1708288771518!5m2!1suk!2sua"
+            width="100%" height="100%" loading="lazy"  className="w-full h-[50vh] lg:h-[100vh]"></iframe>
         {/* </div> */}
       </section>
       <section className="relative md:flex justify-around p-6 md:p-12 lg:p-24 bg-main-sky text-white dark:text-black z-0">
