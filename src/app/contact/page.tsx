@@ -56,7 +56,7 @@ export default function ContactPage() {
           </svg>
           @TechVibeAgancyTg</Link>
         <Link
-          href='mailto:veprsag@gmail.com'
+          href='mailto:office@tech-vibe.agency'
           target='_blank'
           className="flex items-center justify-center sm:justify-start p-4"
         >
@@ -70,7 +70,7 @@ export default function ContactPage() {
             <path
               d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
           </svg>
-          tech-vibe-agancy@mail</Link>
+          office@tech-vibe.agency</Link>
       </section>
     </main>
   );
