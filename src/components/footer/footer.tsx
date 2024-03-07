@@ -26,7 +26,7 @@ export default function Footer() {
             Fb
           </Link>
           <Link
-            href={"https://www.linkedin.com/in/andrew-samoilov/"}
+            href={"https://www.linkedin.com/company/tech-vibe-agency"}
             target="_blank"
             className="hover:text-sky-300  dark:hover:text-main-sky mr-3"
           >
