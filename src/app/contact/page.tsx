@@ -2,9 +2,13 @@ import Image from "next/image";
 import SendForm from "@/components/form/form";
 import Link from "next/link";
 
+
 export default function ContactPage() {
   return (
     <main className="text-xl">
+      {/* <section className="v-[50vw] h-[50vh]">
+        <iframe src='https://my.spline.design/untitled-24a251ac3efb2dedde3e0308d62a2aaf/' frameborder='0' width='100%' height='100%'></iframe>
+      </section> */}
       <section className="lg:flex items-center ">
         <div className="p-6 md:p-12 lg:p-24 lg:py-0">
           <h1 className="text-left text-3xl md:text-6xl lg:text-8xl pb-[0.25em] font-bold tracking-wide">Contact&nbsp;us</h1>
@@ -33,9 +37,7 @@ export default function ContactPage() {
             fill="currentColor"
             className="mr-3 h-5 w-5">
             <path
-              // fill-rule="evenodd"
               d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-            // clip-rule="evenodd"
             />
           </svg>
           +38 (097) 3232-161</Link>

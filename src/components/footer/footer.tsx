@@ -2,6 +2,9 @@ import Link from "next/link";
 import Logo from "../logo/logo";
 import MainMenu from "../main-menu/mainMenu";
 
+import * as pack from '../../../package.json';
+const version = pack.version;
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -35,21 +38,21 @@ export default function Footer() {
       <div className="pt-6 flex justify-between items-center text-sm flex-col-reverse md:flex-row">
         <div className="flex justify-around pt-6 md:p-0">
           <Link
-            href={"#"}
+            href={"/cookies"}
             className="hover:text-sky-300 dark:hover:text-main-sky"
           >
             Cookies
           </Link>
           &nbsp;
           <Link
-            href={"#"}
+            href={"/privacy"}
             className="hover:text-sky-300 dark:hover:text-main-sky"
           >
             Privacy
           </Link>
           &nbsp;
           <Link
-            href={"#"}
+            href={"/terms"}
             className="hover:text-sky-300 dark:hover:text-main-sky"
           >
             Terms
@@ -63,7 +66,7 @@ export default function Footer() {
           >
             Tech Vibe Agency
           </Link>
-          . All&nbsp;rights&nbsp;reserved
+          . All&nbsp;rights&nbsp;reserved. {version}
         </div>
       </div>
     </footer>
