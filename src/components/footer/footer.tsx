@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex md:flex-col lg:flex-row">
           <div className="font-bold mr-3">Follow us:</div>
           <Link
-            href={"https://www.facebook.com/andrii.samoylov"}
+            href={"https://www.facebook.com/61556920389768"}
             target="_blank"
             className="hover:text-sky-300 dark:hover:text-main-sky mr-3"
           >
