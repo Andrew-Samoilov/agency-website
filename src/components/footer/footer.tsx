@@ -62,7 +62,7 @@ export default function Footer() {
           ©{currentYear}&nbsp;
           <Link
             href="/"
-            className="text-sky-300 dark:text-main-sky hover:text-slate-200 dark:hover:text-slate-800"
+            className="text-sky-300 dark:text-main-sky hover:text-slate-200 hover:underline dark:hover:text-slate-800"
           >
             Tech Vibe Agency
           </Link>

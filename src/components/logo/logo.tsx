@@ -13,10 +13,10 @@ export default function Logo({ styleLogo = " leading-3 ", onClickFunction }: Rea
       className={`flex items-center text-main-sky  hover:text-black dark:hover:text-sky-300 ${styleLogo}`}>
       <Image
         src={"/images/logos/logo-t.svg"}
-        alt="T"
+        alt="T-Logo"
         width={40}
         height={12}
-       
+        priority
       />
       <div className="p-2">
         <div className="text-md">Tech Vibe</div>
