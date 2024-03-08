@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tech-vibe-agency.vercel.app/"),
@@ -12,10 +13,10 @@ export const metadata: Metadata = {
   icons: {
     icon: '/images/logos/logo-t.svg',
   },
-  description: "A website for a Tech Vibe digital agency",
+  description: "A Tech Vibe digital agency. We offer various types of digital services.",
   openGraph: {
     images: '/images/logos/logo-t.svg',
-    description: "A website for a Tech Vibe digital agency",
+    description: "A Tech Vibe digital agency. We offer various types of digital services.",
   },
 };
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-ERHLGFG83B" />
     </html>
   );
 }
