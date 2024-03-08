@@ -9,7 +9,7 @@ interface MainMenuProps {
   styleMenuItem?: string;
 }
 
-export default function MainMenu({ styleNav, styleMenuItem, onClickFunction}:
+export default function MainMenu({ styleNav, styleMenuItem, onClickFunction }:
   Readonly<MainMenuProps>) {
 
   let menuItems = [
@@ -40,10 +40,9 @@ export default function MainMenu({ styleNav, styleMenuItem, onClickFunction}:
           key={id}
           href={link}
           onClick={onClickFunction}
-          className={`${styleMenuItem} ${pathname === link ? 'font-bold' : ''} `}
-          aria-hidden
+          className={`${styleMenuItem} ${pathname === link ? 'font-bold' : ''}`}
         >
-            {text}
+          {text}
         </Link>
       ))}
     </nav>
