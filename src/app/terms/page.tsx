@@ -1,4 +1,4 @@
-import * as pack from '../../../package.json';
+import pack from '../../../package.json';
 const companyName = pack.companyName;
 
 export default function TermsPage() {

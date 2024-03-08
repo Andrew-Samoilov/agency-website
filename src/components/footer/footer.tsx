@@ -2,7 +2,7 @@ import Link from "next/link";
 import Logo from "../logo/logo";
 import MainMenu from "../main-menu/mainMenu";
 
-import * as pack from '../../../package.json';
+import pack from '../../../package.json';
 const version = pack.version;
 
 export default function Footer() {

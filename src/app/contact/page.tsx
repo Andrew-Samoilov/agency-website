@@ -1,11 +1,12 @@
 import Image from "next/image";
 import SendForm from "@/components/form/form";
 import Link from "next/link";
-
+import { Suspense } from "react";
 
 export default function ContactPage() {
   return (
     <main className="text-xl">
+      <Suspense fallback='loading...'>
       {/* <section className="v-[50vw] h-[50vh]">
         <iframe src='https://my.spline.design/untitled-24a251ac3efb2dedde3e0308d62a2aaf/' frameborder='0' width='100%' height='100%'></iframe>
       </section> */}
@@ -21,7 +22,7 @@ export default function ContactPage() {
             width="100%" height="100%" loading="lazy"  className="w-full h-[50vh] lg:h-[100vh]"></iframe>
         {/* </div> */}
       </section>
-      <section className="relative md:flex justify-around p-6 md:p-12 lg:p-24 bg-main-sky text-white dark:text-black z-0">
+      <section className="relative lg:flex justify-around p-6 md:p-12 lg:p-24 bg-main-sky text-white dark:text-black z-0">
         <Image src={"/images/bg-drop.svg"}
           alt="bg"
           fill={true}
@@ -58,7 +59,7 @@ export default function ContactPage() {
         <Link
           href='mailto:office@tech-vibe.agency'
           target='_blank'
-          className="flex items-center justify-center sm:justify-start p-4"
+          className="flex items-center justify-center sm:justify-start px-0 md:px-4 p-4"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +72,8 @@ export default function ContactPage() {
               d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
           </svg>
           office@tech-vibe.agency</Link>
-      </section>
+        </section>
+        </Suspense>
     </main>
   );
 }
