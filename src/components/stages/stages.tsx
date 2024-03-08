@@ -4,7 +4,7 @@ import { stagesData } from "./stages-data";
 export default function Stages() {
     return (
         <section className="p-6 md:p-12 lg:p-24 mt-[33vh] md:mt-0">
-            <h1 className="text-3xl md:text-6xl lg:text-8xl pt-[0.75em] pb-[0.25em] font-bold tracking-wide ">How we work</h1>
+            <h2 className="text-center text-3xl md:text-6xl lg:text-8xl pt-[0.75em] pb-[0.25em] font-bold tracking-wide ">How we work</h2>
             <div className="grid gap-6 md:gap-12 lg:gap-16 md:grid-cols-3">
             {stagesData.map((stage) => (
                 <article key={stage.id}>
