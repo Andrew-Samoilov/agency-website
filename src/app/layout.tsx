@@ -5,7 +5,7 @@ import Footer from "@/components/footer/footer";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tech-vibe-agency.vercel.app/"),
+  metadataBase: new URL("https://www.tech-vibe.agency/"),
   title: {
     template: "%s | Tech Vibe agency",
     default: "Tech Vibe agency",
