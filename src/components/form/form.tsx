@@ -2,7 +2,6 @@
 import { useForm } from "react-hook-form"
 import { sendEmail } from './send-email';
 import { useSearchParams } from "next/navigation";
-import { Suspense } from 'react'
 
 export type FormData = {
     name: string
@@ -46,7 +45,7 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
                 <label className="flex flex-col pb-[0.5em]" >Subject{' '}
                     <input placeholder="Subject"
                         {...register("subj")}
-                        defaultValue={formSubj ? formSubj : ''}
+                        defaultValue={formSubj ?? ''}
                         className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
                 </label>
 
@@ -65,7 +64,7 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
                 </label>
 
                 <input type="submit"
-                    className="border-main-sky bg-main-sky dark:bg-sky-300 text-white dark:text-black hover:bg-white hover:text-main-sky duration-300
+                className="border-main-sky bg-main-sky dark:bg-sky-300 text-white duration-300 dark:text-black hover:bg-white hover:text-main-sky
                 font-semibold px-[1em] py-[0.5em] border "/>
             </form >
 

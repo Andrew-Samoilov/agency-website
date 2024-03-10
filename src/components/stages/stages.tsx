@@ -17,7 +17,7 @@ export default function Stages() {
             <div className="pt-[2em] flex flex-col items-center md:hidden ">
                 <p className="text-center text-2xl pb-[1em] ">Have a Project?</p>
                 <ContactUsBtn
-                    className=" text-sky-700 hover:text-white bg-white hover:bg-sky-700 
+                    className=" text-sky-700 hover:text-white bg-white hover:bg-sky-700 duration-300
                 dark:bg-sky-700 dark:text-white dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
                     buttonText="Get a Quote"
                 />

@@ -11,12 +11,12 @@ export default function Header() {
                 <div className="flex items-center">
                     <MainMenu
                         styleNav="hidden md:flex"
-                        styleMenuItem="pr-8 dark:hover:text-sky-300 hover:text-main-sky"
+                        styleMenuItem="pr-8 duration-300 dark:hover:text-sky-300 hover:text-main-sky"
                     />
                     <MobileMenu />
                     <ContactUsBtn
                         buttonText="Get a Quote"
-                        className=" bg-main-sky dark:bg-sky-300 text-white dark:text-black hover:bg-white hover:text-main-sky hidden lg:block"
+                        className=" bg-main-sky dark:bg-sky-300 text-white duration-300 dark:text-black hover:bg-white hover:text-main-sky hidden lg:block"
                     />
                 </div>
             </nav>

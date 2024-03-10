@@ -23,12 +23,9 @@ export default function ProjectsPage() {
           <ProjectsLoad/>
           <article className="md:p-[1em] flex-col items-center hidden md:flex">
             <p className="text-2xl md:text-5xl lg:text-6xl">Have a Project?</p>
-            {/* <button className="mt-[0.75em] md:mt-[1.75em] mb-[0.25em] border text-main-sky dark:text-sky-300 border-main-sky dark:border-sky-300 font-semibold px-[1em] py-[0.5em]">
-              Get a Quote
-            </button> */}
             <ContactUsBtn
-              className="mt-[0.75em] md:mt-[1.75em] mb-[0.25em] text-sky-700 hover:text-white bg-white hover:bg-sky-700 
-                dark:bg-sky-700 dark:text-white dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
+              className="mt-[0.75em] md:mt-[1.75em] mb-[0.25em] text-sky-700 bg-white dark:text-white duration-300
+               hover:text-white hover:bg-sky-700 dark:bg-sky-700 dark:hover:bg-white dark:hover:text-sky-700 hover:border-white "
               buttonText="Get a Quote"
               subjectText="projects-page"
             />

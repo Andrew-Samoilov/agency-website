@@ -10,7 +10,7 @@ export default function Logo({ styleLogo = " leading-3 ", onClickFunction }: Rea
   return (
     <Link href={"/"}
       onClick={onClickFunction}
-      className={`flex items-center text-main-sky  hover:text-black dark:hover:text-sky-300 ${styleLogo}`}>
+      className={`flex items-center text-main-sky duration-300 hover:text-black dark:hover:text-sky-300 ${styleLogo}`}>
       <Image
         src={"/images/logos/logo-t.svg"}
         alt="T-Logo"

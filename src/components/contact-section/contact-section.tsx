@@ -37,7 +37,7 @@ export default function ContactSection({
         Have project in mind? Let&apos;s discuss
       </h2>
       <ContactUsBtn
-        className="text-sky-700 hover:text-white bg-white hover:bg-transparent 
+        className="text-sky-700  bg-white duration-300 hover:text-white hover:bg-transparent 
                 dark:bg-sky-300 dark:text-white  dark:hover:text-sky-300 hover:border-white "
         subjectText={`contact-section-${sectionLook}`}
       />
