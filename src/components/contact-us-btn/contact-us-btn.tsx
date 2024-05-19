@@ -16,7 +16,7 @@ export default function ContactUsBtn({
   return (
     <Link
       href={hrefRes}
-      className={`border border-main-sky duration-300 font-semibold px-[2em] py-[1em] ${className}`}
+      className={`border border-main-sky duration-300 font-semibold text-2xl md:text-m px-[1em] py-[0.5em] ${className}`}
     >
       <button>
         {buttonText}
