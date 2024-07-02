@@ -22,7 +22,7 @@ export default function ProjectsLoad() {
                   height={300}
                   className=" group-hover:scale-105 duration-300 block w-full h-full object-cover"
                 ></Image>
-                <div className="absolute bottom-0 right-0 w-auto bg-white/75 text-right p-[1em] group-hover:text-white group-hover:bg-main-sky/95 duration-300">
+                <div className="absolute bottom-0 right-0 w-auto bg-white/75 text-right dark:text-main-sky p-[1em] group-hover:text-white group-hover:bg-main-sky/95 duration-300">
                   <h3 className="font-bold text-xl pb-[0.25em] ">
                     {project.name}
                   </h3>
