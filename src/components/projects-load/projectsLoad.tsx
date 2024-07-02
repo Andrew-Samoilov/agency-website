@@ -20,7 +20,7 @@ export default function ProjectsLoad() {
                   alt={project.title}
                   width={400}
                   height={300}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 25vw"
                   className=" group-hover:scale-105 duration-300 block w-full h-full object-cover"
                 ></Image>
                 <div className="absolute bottom-0 right-0 w-auto bg-white/75 text-right dark:text-main-sky p-[1em] group-hover:text-white group-hover:bg-main-sky/95 duration-300">
