@@ -8,18 +8,19 @@ export default function ProjectsLoad() {
     <>
       {projectsData.map((project) => (
         <article key={project.id}
-          className="relative  dark:text-slate-300">
+          className="relative dark:text-slate-300">
           <Link
             href={`/projects/${stringToURL(project.name)}`}
             className="group z-0">
 
             {project.imgUrl && (
-              <div className="  w-400 h-400 overflow-hidden group">
+              <div className=" w-400 h-400 overflow-hidden group">
                 <Image
                   src={project.imgUrl}
                   alt={project.title}
                   width={400}
                   height={300}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   className=" group-hover:scale-105 duration-300 block w-full h-full object-cover"
                 ></Image>
                 <div className="absolute bottom-0 right-0 w-auto bg-white/75 text-right dark:text-main-sky p-[1em] group-hover:text-white group-hover:bg-main-sky/95 duration-300">
