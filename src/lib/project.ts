@@ -1,7 +1,7 @@
 import { projectsData } from "@/components/projects-load/projects-data";
 import { teamData } from "@/components/team-load/team-data";
 
-import {AnyDataWithIdFromName, IProject, ITeam} from "@/types/types";
+import { AnyDataWithIdFromName, IProject, ITeam } from "@/types/types";
 
 export const stringToURL = (str: string) => {
     return str
@@ -22,7 +22,7 @@ export const getAllDataIds = <T extends AnyDataWithIdFromName>(data: T[]): strin
 //     return projectIds;
 // }
 
-export const getProjectData = (postId: string): IProject | null => {   
+export const getProjectData = (postId: string): IProject | null => {
     const data = projectsData.find((post) => stringToURL(post.name) === postId.toString());
     // console.log(`post data`, data);
     return data ?? null;

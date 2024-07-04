@@ -22,7 +22,6 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const teammate = getTeammateData(params.id);
-
   const previousImages = (await parent).openGraph?.images ?? [];
 
   return {

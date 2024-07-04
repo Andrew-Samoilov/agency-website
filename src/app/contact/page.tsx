@@ -1,12 +1,12 @@
 import Image from "next/image";
 import SendForm from "@/components/form/form";
 import Link from "next/link";
-import { Suspense } from "react";
+// import { Suspense } from "react";
 
 export default function ContactPage() {
   return (
     <main className="text-xl">
-      <Suspense fallback='loading...'>
+      {/* <Suspense fallback='loading...'> */}
       {/* <section className="v-[50vw] h-[50vh]">
         <iframe src='https://my.spline.design/untitled-24a251ac3efb2dedde3e0308d62a2aaf/' frameborder='0' width='100%' height='100%'></iframe>
       </section> */}
@@ -73,7 +73,7 @@ export default function ContactPage() {
           </svg>
           office@tech-vibe.agency</Link>
         </section>
-        </Suspense>
+        {/* </Suspense> */}
     </main>
   );
 }

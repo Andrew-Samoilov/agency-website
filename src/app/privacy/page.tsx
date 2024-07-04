@@ -28,7 +28,7 @@ export default function PrivacyPage() {
                 <p>You have the right to access, correct, and delete your personal information. Contact us for assistance.</p>
                 <h2 className="font-bold text-xl pb-[0.25em]">Changes to this policy</h2>
                 <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page.</p>
-                <p className="italic">Last updated: <time>07.03.2024</time></p>
+                <p className="italic">Last updated: <time>04.07.2024</time></p>
             </section>
         </main>
     )

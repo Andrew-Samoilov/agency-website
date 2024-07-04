@@ -23,7 +23,7 @@ export default function CookiesPage() {
                 <p>Our website uses cookies to improve your experience. By using our website, you consent to all cookies in accordance with our Cookie Policy.</p>
                 <h2 className="font-bold text-xl pb-[0.25em]">Changes to this policy</h2>
                 <p>We may update our Cookie Policy from time to time. Any changes will be posted on this page.</p>
-                <p className="italic">Last updated: <time>07.03.2024</time></p>
+                <p className="italic">Last updated: <time>04.07.2024</time></p>
             </section>
         </main>
     )

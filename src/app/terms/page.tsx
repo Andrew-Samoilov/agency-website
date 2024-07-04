@@ -17,7 +17,7 @@ export default function TermsPage() {
                 <b>{companyName}</b> provides this site as-is and makes no representations or warranties of any kind, expressed or implied. Your use of this site is at your own risk.
                 <h2 className="font-bold text-xl pb-[0.25em]">Changes to these terms</h2>
                 <p>We reserve the right to update or change these terms of service at any time. Your continued use of the site after any such changes constitutes your acceptance of the new terms.</p>
-                <p className="italic">Last updated: <time>07.03.2024</time></p>
+                <p className="italic">Last updated: <time>04.07.2024</time></p>
             </section>
         </main>
     )
