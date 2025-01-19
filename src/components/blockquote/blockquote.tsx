@@ -5,7 +5,7 @@ export default function Blockquote({
 }>) {
     return (
         <blockquote
-            className={` ${className}`}>
+            className={className}>
             <p className="pb-[0.5em] leading-relaxed italic">
                 {text}
             </p>
