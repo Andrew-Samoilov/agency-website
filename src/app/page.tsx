@@ -1,4 +1,4 @@
-import Blockquote from "@/components/blockquote/blockquote";
+import BlockquoteSection from "@/components/blockquote/blockquote-section";
 import ContactSection from "@/components/contact-section/contact-section";
 import HeroSection from "@/components/hero-section/hero-section";
 import ProjectsSection from "@/components/projects-section/projects-section";
@@ -10,13 +10,11 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <div className="p-6 md:p-12 lg:p-24 h-screen flex items-center justify-center">
-        <Blockquote
-          text="The only way to do great work is to love what you do."
-          author="Steve Jobs"
-          className="text-3xl md:text-5xl  max-w-3xl md:pr-[2em]"
-        />
-      </div>
+      <BlockquoteSection
+        text="The only way to do great work is to love what you do."
+        author="Steve Jobs"
+        className="text-3xl md:text-5xl  max-w-3xl md:pr-[2em]"
+      />
       <ProjectsSection />
       <Stages />
       <TechCloudSection />

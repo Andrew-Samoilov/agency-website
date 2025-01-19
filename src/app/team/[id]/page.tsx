@@ -3,7 +3,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import { ITeam } from "@/types/types";
 import { teamData } from "@/components/team-load/team-data";
-import Blockquote from "@/components/blockquote/blockquote";
+import Blockquote from "@/components/blockquote/blockquote-section";
 import ContactUsBtn from "@/components/contact-us-btn/contact-us-btn";
 
 type Props = {
@@ -84,7 +84,7 @@ export default function TeamMemberDetail({
           />
         )}
       </section>
-      
+
     </main>
   );
 }

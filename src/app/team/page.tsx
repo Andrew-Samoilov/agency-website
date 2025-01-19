@@ -1,4 +1,4 @@
-import Blockquote from "@/components/blockquote/blockquote";
+import Blockquote from "@/components/blockquote/blockquote-section";
 import ContactUsBtn from "@/components/contact-us-btn/contact-us-btn";
 import TeamLoad from "@/components/team-load/teamLoad";
 import { Metadata } from "next";
