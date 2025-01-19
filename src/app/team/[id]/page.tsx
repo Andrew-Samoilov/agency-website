@@ -7,21 +7,20 @@ import Blockquote from "@/components/blockquote/blockquote-section";
 import ContactUsBtn from "@/components/contact-us-btn/contact-us-btn";
 
 type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  params: Promise<{ id: string }>;
 };
 
 export function generateStaticParams() {
-  const res = getAllDataIds<ITeam>(teamData);
-  // console.log(`generateStaticParams `, res);
-  return res;
+  return getAllDataIds<ITeam>(teamData);
 }
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
+  props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const teammate = getTeammateData(params.id);
+  const { params } = props;
+  const { id } = await params;
+  const teammate = getTeammateData(id);
   const previousImages = (await parent).openGraph?.images ?? [];
 
   return {
@@ -34,11 +33,9 @@ export async function generateMetadata(
   };
 }
 
-export default function TeamMemberDetail({
-  params,
-  searchParams,
-}: Readonly<Props>) {
-  let teammate = getTeammateData(params.id);
+export default async function TeamMemberDetail({ params }: Readonly<Props>) {
+  const { id } = await params;
+  let teammate = getTeammateData(id);
   return (
     <main>
       <section className="dark:text-slate-200">

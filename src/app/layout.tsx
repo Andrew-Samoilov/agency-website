@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from "next/script";
+// import { GoogleAnalytics } from '@next/third-parties/google';
+
+const GA_MEASUREMENT_ID = "G-1E8SZ8BS9M";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tech-vibe.agency/"),
@@ -35,11 +38,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* Підключення GA */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         <Header />
-          {children}
+        {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-1E8SZ8BS9M" />
+      {/* <GoogleAnalytics gaId="G-1E8SZ8BS9M" /> */}
     </html>
   );
 }

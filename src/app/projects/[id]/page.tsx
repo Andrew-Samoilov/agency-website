@@ -8,21 +8,20 @@ import { IProject } from "@/types/types";
 import { projectsData } from "@/components/projects-load/projects-data";
 
 type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  params: Promise<{ id: string }>;
 };
 
 export function generateStaticParams() {
-  const res = getAllDataIds<IProject>(projectsData);
-  return res;
+  return getAllDataIds<IProject>(projectsData);
 }
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
+  props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const project = getProjectData(params.id);
-
+  const { params } = props;
+  const { id } = await params;
+  const project = getProjectData(id);
   const previousImages = (await parent).openGraph?.images ?? [];
 
   return {
@@ -35,11 +34,10 @@ export async function generateMetadata(
   };
 }
 
-export default function ProjectDetail({
-  params,
-  searchParams,
-}: Readonly<Props>) {
-  let project = getProjectData(params.id);
+export default async function ProjectDetail({ params }: Readonly<Props>) {
+  const { id } = await params;
+  const project = getProjectData(id);
+
   return (
     <main>
       <section className="dark:text-slate-200">

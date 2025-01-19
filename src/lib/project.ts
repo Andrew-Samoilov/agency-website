@@ -12,7 +12,14 @@ export const stringToURL = (str: string) => {
         .replace(/^-+|-+$/g, '');
 }
 
-export const getAllDataIds = <T extends AnyDataWithIdFromName>(data: T[]): string[] => data.map(item => stringToURL(item.name));
+export const getAllDataIds = <T extends AnyDataWithIdFromName>(
+    data: T[]
+  ): Array<{ id: string }> => {
+    return data.map((item) => ({ id: stringToURL(item.name) }));
+  };
+
+// export const getAllDataIds = <T extends AnyDataWithIdFromName>(data: T[]): string[] => data.map(item => stringToURL(item.name));
+
 // export const getAllDataIds = () => projectsData.map(post => stringToURL(post.name));
 
 // normal version
