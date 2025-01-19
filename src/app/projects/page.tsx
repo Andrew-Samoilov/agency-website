@@ -1,5 +1,5 @@
 import ContactUsBtn from "@/components/contact-us-btn/contact-us-btn";
-import ProjectsLoad from "@/components/projects-load/projectsLoad";
+import ProjectsLoad from "@/components/projects-section/projects-load/projectsLoad";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { teamData } from "../../components/team-load/team-data"
+import { teamData } from "../../components/team-section/team-load/team-data"
 import { stringToURL } from "@/lib/project"
 
 const BASE_URL = 'https://www.tech-vibe.agency'

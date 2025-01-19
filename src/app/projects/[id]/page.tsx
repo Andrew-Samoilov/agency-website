@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 
 import { IProject } from "@/types/types";
-import { projectsData } from "@/components/projects-load/projects-data";
+import { projectsData } from "@/components/projects-section/projects-load/projects-data";
 
 type Props = {
   params: Promise<{ id: string }>;

@@ -2,7 +2,7 @@ import Blockquote from "@/components/blockquote/blockquote";
 import ContactSection from "@/components/contact-section/contact-section";
 import HeroSection from "@/components/hero-section/hero-section";
 import ProjectsSection from "@/components/projects-section/projects-section";
-import Stages from "@/components/stages/stages";
+import Stages from "@/components/stages-section/stages";
 import TeamSection from "@/components/team-section/team-section";
 import TechCloudSection from "@/components/tech-cloud-section/tech-cloud-section";
 

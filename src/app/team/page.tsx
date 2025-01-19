@@ -1,6 +1,6 @@
 import Blockquote from "@/components/blockquote/blockquote";
 import ContactUsBtn from "@/components/contact-us-btn/contact-us-btn";
-import TeamLoad from "@/components/team-load/teamLoad";
+import TeamLoad from "@/components/team-section/team-load/teamLoad";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

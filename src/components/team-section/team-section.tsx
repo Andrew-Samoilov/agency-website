@@ -1,4 +1,4 @@
-import TeamLoad from "@/components/team-load/teamLoad";
+import TeamLoad from "./team-load/teamLoad";
 import Link from "next/link";
 import ContactUsBtn from "../contact-us-btn/contact-us-btn";
 

@@ -1,4 +1,4 @@
-import ProjectsLoad from "@/components/projects-load/projectsLoad";
+import ProjectsLoad from "./projects-load/projectsLoad";
 import Link from "next/link";
 import ContactUsBtn from "../contact-us-btn/contact-us-btn";
 
