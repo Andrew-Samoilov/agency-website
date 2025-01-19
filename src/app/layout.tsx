@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Script from "next/script";
-// import { GoogleAnalytics } from '@next/third-parties/google';
 
 const GA_MEASUREMENT_ID = "G-1E8SZ8BS9M";
 
@@ -37,27 +36,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {/* Підключення GA */}
+      <head>
+        {/* Google Analytics */}
         <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-1E8SZ8BS9M"
+          strategy="afterInteractive" //Script starts after first page render
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+      </head>
+      <body>
         <Header />
         {children}
         <Footer />
       </body>
-      {/* <GoogleAnalytics gaId="G-1E8SZ8BS9M" /> */}
     </html>
   );
 }
