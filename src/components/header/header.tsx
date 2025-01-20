@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="p-6 md:px-12 lg:px-24 lg:pr-32 sticky top-0 z-50 bg-white dark:bg-black md:relative">
             <nav className="flex justify-between items-center">
-                <Logo styleLogo=""/>
+                <Logo/>
                 <div className="flex items-center">
                     <MainMenu
                         styleNav="hidden md:flex"
