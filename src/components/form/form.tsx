@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form"
 import { useSearchParams } from "next/navigation";
 import { sendClickup } from "./send-clickup";
+import SubmitButton from "./submit-button";
 
 export type FormData = {
     name: string
@@ -41,9 +42,15 @@ export default function SendForm({ className }: Readonly<{ className?: string }>
                     className="border p-2 bg-inherit focus:outline-none focus:ring focus:ring-main-sky" />
             </label>
 
-            <input type="submit"
+            {/* <input type="submit"
                 className="border-main-sky bg-main-sky dark:bg-sky-300 text-white duration-300 dark:text-black hover:bg-white hover:text-main-sky
-                font-semibold px-[1em] py-[0.5em] border "/>
+                font-semibold px-[1em] py-[0.5em] border "/> */}
+            <SubmitButton
+                pendingText="Sending ..."
+                className='border-main-sky bg-main-sky dark:bg-sky-300 text-white duration-300 dark:text-black hover:bg-white hover:text-main-sky
+                font-semibold px-[1em] py-[0.5em] border'>
+                Send
+            </SubmitButton>
         </form >
     )
 }

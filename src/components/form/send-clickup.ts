@@ -29,11 +29,11 @@ export function sendClickup(data: FormData) {
     })
         .then((res) => res.json())
         .then((response) => {
-            console.log('ClickUp response:', response);
+            // console.log('ClickUp response:', response);
             alert(response.message || 'Merssage send!');
         })
         .catch((err) => {
             console.error('ClickUp error:', err);
-            alert('Error sending message');
+            alert(`Error sending messag ${err}`);
         });
 }
