@@ -1,7 +1,7 @@
 import { projectsData } from "@/components/projects-section/projects-load/projects-data";
 import { teamData } from "@/components/team-section/team-load/team-data";
 
-import { AnyDataWithIdFromName, IProject, ITeam } from "@/types/types";
+import { IProject, ITeam } from "@/types/types";
 
 export const stringToURL = (str: string) => {
     return str
@@ -12,11 +12,16 @@ export const stringToURL = (str: string) => {
         .replace(/^-+|-+$/g, '');
 }
 
-export const getAllDataIds = <T extends AnyDataWithIdFromName>(
-    data: T[]
-  ): Array<{ id: string }> => {
-    return data.map((item) => ({ id: stringToURL(item.name) }));
-  };
+export const getAllDataIds = <T extends { name: string }>(data: T[]) => {
+  return data.map((item) => ({ id: stringToURL(item.name) }));
+};
+
+
+// export const getAllDataIds = <T extends AnyDataWithIdFromName>(
+//     data: T[]
+//   ): Array<{ id: string }> => {
+//     return data.map((item) => ({ id: stringToURL(item.name) }));
+//   };
 
 // export const getAllDataIds = <T extends AnyDataWithIdFromName>(data: T[]): string[] => data.map(item => stringToURL(item.name));
 
@@ -30,10 +35,14 @@ export const getAllDataIds = <T extends AnyDataWithIdFromName>(
 // }
 
 export const getProjectData = (postId: string): IProject | null => {
-    const data = projectsData.find((post) => stringToURL(post.name) === postId.toString());
-    // console.log(`post data`, data);
-    return data ?? null;
-}
+  return projectsData.find((post) => stringToURL(post.name) === postId) ?? null;
+};
+
+// export const getProjectData = (postId: string): IProject | null => {
+//     const data = projectsData.find((post) => stringToURL(post.name) === postId.toString());
+//     // console.log(`post data`, data);
+//     return data ?? null;
+// }
 
 export const getTeammateData = (postId: string): ITeam | null => {
     const data = teamData.find((post) => stringToURL(post.name) === postId.toString());
