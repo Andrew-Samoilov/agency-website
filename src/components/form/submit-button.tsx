@@ -10,12 +10,12 @@ interface SubmitButtonProps {
   disabled?: boolean;
 }
 
-const SubmitButton = ({
+export default function SubmitButton({
   pendingText = "Sending...",
   className = "",
   children,
   disabled = false,
-}: SubmitButtonProps) => {
+}: SubmitButtonProps) {
   const { pending } = useFormStatus();
 
   return (
@@ -28,5 +28,3 @@ const SubmitButton = ({
     </button>
   );
 };
-
-export default SubmitButton;
