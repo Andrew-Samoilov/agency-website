@@ -6,7 +6,7 @@ import { stringToURL } from "@/lib/project";
 export default function TeamLoad({ isMain }: Readonly<{ isMain: boolean }>) {
   return (
     <>
-      {teamData.map((member) => (
+      {teamData.map((member, index) => (
         <article key={member.id} className="md:p-[1em] dark:text-slate-300">
           <Link
             // href={isMain ? "/team" : `/team/${stringToURL(member.name)}`}
@@ -20,6 +20,7 @@ export default function TeamLoad({ isMain }: Readonly<{ isMain: boolean }>) {
                   alt={member.name}
                   width={400}
                   height={400}
+                  priority={index === 0} 
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 25vw"
                   className=" group-hover:scale-105 duration-300"
                 />

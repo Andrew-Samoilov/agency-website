@@ -10,13 +10,15 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <section className="p-6 md:p-12 lg:p-24 h-screen flex items-center justify-center">
+      <div className="p-6 md:p-12 lg:p-24 h-screen flex items-center justify-center">
+     {/* do not change to section 
+        Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed */}
         <Blockquote
           text="The only way to do great work is to love what you do."
           author="Steve Jobs"
           className="text-3xl md:text-5xl  max-w-3xl md:pr-[2em]"
         />
-      </section>
+      </div>
       <ProjectsSection />
       <Stages />
       <TechCloudSection />
