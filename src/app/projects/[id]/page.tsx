@@ -59,7 +59,12 @@ export default async function ProjectDetail({ params }: Readonly<Props>) {
             {project?.title}
           </p>
 
-          <Link href={`${project?.url}`} className="p-6 md:p-0 md:text-2xl pb-[0.25em]">
+          <Link
+            href={`${project?.url}`}
+            className="p-6 md:p-0 md:text-2xl pb-[0.25em]"
+            target="_blank"
+            rel="noopener"
+          >
             {project?.urlTitle}
           </Link>
           <p className="p-6 md:p-0 italic md:text-2xl pb-[0.25em]">

@@ -1,6 +1,16 @@
 export const projectsData = [
     {
-        id: "1",
+        id: "0",
+        name: "Shina Mix",
+        title: "Tire Importer Landing Page",
+        role: "Development, Deployment, Optimization",
+        imgUrl: "/images/projects/shina-mix-screenshot.jpg",
+        description: "Landing page of a tire importer with its own warehouse in the heart of Kyiv. Over 25 years in the market. Trusted by thousands of regular clients.",
+        url: "https://shinamix.com",
+        urlTitle: "shinamix.com",
+    },
+    {
+        id: "2",
         name: "Tours de Kiev",
         title: "Touristic agency website",
         role: "Development",
@@ -10,9 +20,9 @@ export const projectsData = [
         urlTitle: "toursdekiev.com.ua",
     },
     {
-        id: "2",
+        id: "1",
         name: "Jugue tear",
-        title: "Website about sharing adapted toys.",
+        title: "Website about sharing adapted toys",
         role: "Programing",
         imgUrl: "/images/projects/j-screenshot.jpg",
         description: `Website about adapting and providing toys for boys and girls with complex motor disabilities.`,
