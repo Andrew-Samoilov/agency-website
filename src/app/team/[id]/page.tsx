@@ -5,6 +5,7 @@ import { ITeam } from "@/types/types";
 import { teamData } from "@/components/team-section/team-load/team-data";
 import Blockquote from "@/components/blockquote/blockquote";
 import ContactUsBtn from "@/components/contact-us-btn/contact-us-btn";
+import Link from "next/link";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -57,12 +58,27 @@ export default async function TeamMemberDetail({ params }: Readonly<Props>) {
             {teammate?.role}
           </p>
 
-          <p className="md:text-2xl pb-[0.25em]">
-            {teammate?.gitUrl}
-          </p>
-          <p className="md:text-2xl pb-[0.25em]">
-            {teammate?.linkedInUrl}
-          </p>
+          {teammate?.gitUrl && (
+            <Link
+              className="md:text-2xl pb-[0.25em]"
+              href={teammate.gitUrl}
+              target="_blank"
+              rel="noopener"
+            >
+              {teammate.gitUrl}
+            </Link>
+          )}
+
+          {teammate?.linkedInUrl && (
+            <Link
+              className="md:text-2xl pb-[0.25em]"
+              href={teammate.linkedInUrl}
+              target="_blank"
+              rel="noopener"
+            >
+              {teammate.linkedInUrl}
+            </Link>
+          )}
 
         </article>
       </section>

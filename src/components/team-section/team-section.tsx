@@ -9,7 +9,7 @@ export default function TeamSection() {
         <Link href={"/team"}>Our team</Link>
       </h2>
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
-        <TeamLoad isMain={true} />
+        <TeamLoad/>
 
         <div className="md:p-[1em] hidden md:flex flex-col items-center justify-center">
           <p className="text-center text-2xl md:text-5xl lg:text-6xl pb-[1em] ">Join the team</p>

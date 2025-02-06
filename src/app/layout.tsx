@@ -17,7 +17,10 @@ export const metadata: Metadata = {
   },
   description: "A Tech Vibe digital agency. We offer various types of digital services.",
   openGraph: {
+    type: "website",
     images: '/images/logos/logo-t.svg',
+    url: "https://www.tech-vibe.agency",
+    siteName: "Tech Vibe Agency",
     description: "A Tech Vibe digital agency. We offer various types of digital services.",
   },
 };

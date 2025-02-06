@@ -42,7 +42,7 @@ export default async function ProjectDetail({ params }: Readonly<Props>) {
     <main>
       <section className="dark:text-slate-200">
         <article className=" md:p-12 lg:p-24 lg:grid grid-cols-2 grid-flow-row-dense">
-          <h1 className="p-6 md:p-0  font-semibold text-3xl md:text-6xl lg:text-8xl md:max-w-3xl lg:mr-48 pb-[0.25em] ">
+          <h1 className="p-6 md:pt-0  font-semibold text-3xl md:text-6xl lg:text-8xl md:max-w-3xl lg:mr-0">
             {project?.name}
           </h1>
           {project?.imgUrl && (
@@ -55,23 +55,23 @@ export default async function ProjectDetail({ params }: Readonly<Props>) {
               className="row-span-3 lg:ml-auto "
             ></Image>
           )}
-          <p className="p-6 md:p-0 pb-[0.25em] text-2xl md:text-5xl lg:text-6xl lg:max-w-5xl">
+          <p className="p-6  text-2xl md:text-5xl lg:text-6xl lg:max-w-5xl">
             {project?.title}
           </p>
 
           <Link
             href={`${project?.url}`}
-            className="p-6 md:p-0 md:text-2xl pb-[0.25em]"
+            className="p-6  md:text-2xl "
             target="_blank"
             rel="noopener"
           >
             {project?.urlTitle}
           </Link>
-          <p className="p-6 md:p-0 italic md:text-2xl pb-[0.25em]">
+          <p className="p-6  italic md:text-2xl md:col-span-2">
             Our role: <span className="text-main-sky">{project?.role}</span>
           </p>
 
-          <p className="p-6 md:p-0 pb-[0.75em] md:text-2xl lg:text-3xl leading-normal md:leading-relaxed lg:max-w-4xl col-span-2">
+          <p className="p-6 md:text-2xl lg:text-3xl leading-normal md:leading-relaxed lg:max-w-4xl lg:col-span-2">
             {project?.description}
           </p>
         </article>

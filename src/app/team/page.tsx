@@ -23,7 +23,7 @@ export default function TeamPage() {
           website development, content, and digital marketing.
         </p>
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
-          <TeamLoad isMain={false} />
+          <TeamLoad />
         </div>
       </section>
       <hr />

@@ -3,13 +3,12 @@ import Link from "next/link";
 import { teamData } from "./team-data";
 import { stringToURL } from "@/lib/project";
 
-export default function TeamLoad({ isMain }: Readonly<{ isMain: boolean }>) {
+export default function TeamLoad() {
   return (
     <>
       {teamData.map((member, index) => (
         <article key={member.id} className="md:p-[1em] dark:text-slate-300">
           <Link
-            // href={isMain ? "/team" : `/team/${stringToURL(member.name)}`}
             href={`/team/${stringToURL(member.name)}`}
             className="group"
           >
@@ -32,12 +31,7 @@ export default function TeamLoad({ isMain }: Readonly<{ isMain: boolean }>) {
                 </div>
               </div>
             )}
-            <p className={isMain ? "hidden" : "block py-[0.25em]"}>
-              {member.gitUrl}
-            </p>
-            <p className={isMain ? "hidden" : "block pb-[0.25em]"}>
-              {member.linkedInUrl}
-            </p>
+            
           </Link>
         </article>
       ))}
