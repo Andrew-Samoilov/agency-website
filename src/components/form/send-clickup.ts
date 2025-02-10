@@ -30,7 +30,7 @@ export function sendClickup(data: FormData) {
         .then((res) => res.json())
         .then((response) => {
             // console.log('ClickUp response:', response);
-            alert(response.message || 'Merssage send!');
+            alert(response.message || 'Message send!');
         })
         .catch((err) => {
             console.error('ClickUp error:', err);

@@ -16,33 +16,9 @@ export const getAllDataIds = <T extends { name: string }>(data: T[]) => {
   return data.map((item) => ({ id: stringToURL(item.name) }));
 };
 
-
-// export const getAllDataIds = <T extends AnyDataWithIdFromName>(
-//     data: T[]
-//   ): Array<{ id: string }> => {
-//     return data.map((item) => ({ id: stringToURL(item.name) }));
-//   };
-
-// export const getAllDataIds = <T extends AnyDataWithIdFromName>(data: T[]): string[] => data.map(item => stringToURL(item.name));
-
-// export const getAllDataIds = () => projectsData.map(post => stringToURL(post.name));
-
-// normal version
-// export default function getAllPostIds() {
-//     const projectIds = projectsData.map(post => post.id);
-//     // console.log(projectIds);
-//     return projectIds;
-// }
-
 export const getProjectData = (postId: string): IProject | null => {
   return projectsData.find((post) => stringToURL(post.name) === postId) ?? null;
 };
-
-// export const getProjectData = (postId: string): IProject | null => {
-//     const data = projectsData.find((post) => stringToURL(post.name) === postId.toString());
-//     // console.log(`post data`, data);
-//     return data ?? null;
-// }
 
 export const getTeammateData = (postId: string): ITeam | null => {
     const data = teamData.find((post) => stringToURL(post.name) === postId.toString());
