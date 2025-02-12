@@ -15,12 +15,13 @@ export default function ContactUsBtn({
   }
 
   const isDisabled = pathname === "/contact";
+  // console.log(pathname, isDisabled);
 
   return (
     <Link
       href={isDisabled ? "#" : hrefRes}
       className={`border border-main-sky duration-300 font-semibold px-[2.25em] py-[1.5em] 
-        ${isDisabled ? "pointer-events-none text-gray-500 border-gray-100 bg-gray-100 cursor-not-allowed" : ""}
+        ${isDisabled ? "pointer-events-none !text-gray-500 !border-gray-100 !bg-gray-100 cursor-not-allowed" : ""}
         ${className}`}
       aria-disabled={isDisabled}
     >
