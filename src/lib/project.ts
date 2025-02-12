@@ -1,6 +1,5 @@
 import { projectsData } from "@/components/projects-section/projects-load/projects-data";
 import { teamData } from "@/components/team-section/team-load/team-data";
-
 import { IProject, ITeam } from "@/types/types";
 
 export const stringToURL = (str: string) => {
