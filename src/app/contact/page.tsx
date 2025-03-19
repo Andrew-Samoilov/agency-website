@@ -3,6 +3,7 @@ import SendForm from "@/components/form/form";
 import Link from "next/link";
 
 import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   alternates: {
@@ -18,7 +19,9 @@ export default function ContactPage() {
             <h1 className="text-left text-3xl md:text-6xl lg:text-8xl pb-[0.25em] font-bold tracking-wide">Contact&nbsp;us</h1>
             <p className=" pb-[1em]">Get in touch with us to see how we can help you with your project</p>
 
+          <Suspense fallback={<p>Loading form...</p>}>
             <SendForm />
+          </Suspense>
           </div>
           <iframe title="googleMaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17082.56126707991!2d30.35079035883301!3d50.47205243685994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1708288771518!5m2!1suk!2sua"
             width="100%" height="100%" loading="lazy" className="w-full h-[50vh] lg:h-[100vh]"></iframe>
