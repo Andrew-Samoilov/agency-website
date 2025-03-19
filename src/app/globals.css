@@ -27,3 +27,7 @@ body {
 	color: #0F172A;
 	background: white;
 }
+
+.before\:bg-bg-drop {
+    will-change: opacity, transform;
+}

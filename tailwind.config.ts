@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         'main-sky': '#0369a1', //sky-700
       },
+      backgroundImage: {
+        'bg-drop': "url('/images/bg-drop.svg')",
+      },
     },
     plugins: [],
   }
