@@ -19,7 +19,7 @@ export default function TeamLoad() {
                   alt={member.name}
                   width={400}
                   height={400}
-                  priority={index === 0} 
+                  // priority={index === 0} 
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 25vw"
                   className=" group-hover:scale-105 duration-300"
                 />
