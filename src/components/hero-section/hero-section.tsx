@@ -14,6 +14,7 @@ export default function HeroSection() {
                     fill={true}
                     className="-z-10"
                     priority={true}
+                    loading="eager"
                 />
                 <p className="p-[0.75em] pt-[1.5em] leading-relaxed md:max-w-6xl md:pl-[1em] lg:pl-[3em]">
                     Welcome to our world. We&apos;re Tech Vibe,{" "}
