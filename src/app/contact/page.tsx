@@ -1,12 +1,18 @@
 import Image from "next/image";
 import SendForm from "@/components/form/form";
 import Link from "next/link";
-import { Suspense } from "react";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://www.tech-vibe.agency/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
     <main className="text-xl">
-      <Suspense fallback='loading...'>
         <section className="lg:flex items-center ">
           <div className="p-6 md:p-12 lg:p-24 lg:py-0">
             <h1 className="text-left text-3xl md:text-6xl lg:text-8xl pb-[0.25em] font-bold tracking-wide">Contact&nbsp;us</h1>
@@ -68,7 +74,6 @@ export default function ContactPage() {
             </svg>
             office@tech-vibe.agency</Link>
         </section>
-      </Suspense>
     </main>
   );
 }
