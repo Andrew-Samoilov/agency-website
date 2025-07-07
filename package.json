@@ -1,7 +1,7 @@
 {
   "companyName": "Tech Vibe agency",
   "name": "agency-website",
-  "version": "0.8.945",
+  "version": "0.9",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SendForm from "@/components/form/form";
 import Link from "next/link";
 
@@ -27,11 +26,7 @@ export default function ContactPage() {
             width="100%" height="100%" loading="lazy" className="w-full h-[50vh] lg:h-[100vh]"></iframe>
         </section>
         <section className="relative lg:flex justify-around p-6 md:p-12 lg:p-24 bg-main-sky text-white dark:text-black z-0">
-          <Image src={"/images/bg-drop.svg"}
-            alt="bg"
-            fill={true}
-            className="-z-10"
-          />
+
           <Link href='tel:+380973232161'
             target='_blank'
             className="flex items-center justify-center sm:justify-start p-4"
